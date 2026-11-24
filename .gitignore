@@ -1,0 +1,39 @@
+# ROS 2 / colcon build output
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# C++ / CMake
+CMakeLists.txt.user
+compile_commands.json
+.cache/
+
+# ROS bag recordings (large data files)
+rosbag2_*/
+*.bag
+*.db3
+*.mcap
+
+# Gazebo recordings and logs
+*.tlog
+*.log
+
+# Robot model files (.urdf, .xacro, .sdf, .world), .rviz configs, and launch files are source: keep them tracked.
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# macOS
+.DS_Store
+
+# Local environment and secrets
+.env

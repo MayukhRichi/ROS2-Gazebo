@@ -1,0 +1,15 @@
+services:
+  ros:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: ros2_dev
+
+    stdin_open: true
+    tty: true
+
+    volumes:
+      - ./workspace:/workspace
+
+    working_dir: /workspace
